@@ -65,7 +65,7 @@ export default {
         formdata.append("file1", item); //将每一个文件图片都加进formdata
       });
       axios
-        .post("http://localhost:3001/upload-single-file", formdata)
+        .post("/upload-single-file", formdata)
         .then((res) => {
           console.log(res);
         }); //打印响应体
@@ -96,7 +96,7 @@ export default {
 
         //上传文章（文件）（注意以下 axios 的写法）
         axios
-          .post("http://localhost:3001/upload-single-file", formData, {
+          .post("/upload-single-file", formData, {
             onUploadProgress: (progressEvent) => {
               const percentCompleted = Math.round(
                 (progressEvent.loaded * 100) / progressEvent.total
@@ -112,7 +112,7 @@ export default {
         // 同时上传文章相关信息（注意以下 axios 的写法）
         axios({
           method: "post",
-          url: "http://localhost:3001/article/add",
+          url: "/article/add",
           data: {
             // id: "1",//文章id数据库自动生成
             name: this.title,

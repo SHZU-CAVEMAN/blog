@@ -94,7 +94,7 @@ export default {
       
         axios({
             method: "get",
-            url: "http://localhost:3001/category/getall",
+            url: "/category/getall",
         })
             .then((res) => {
                 this.length = res.data.data.length;

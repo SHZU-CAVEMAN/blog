@@ -52,7 +52,7 @@ export default {
       // this.confirmLoading = true;//？？？
       axios({
         method: "post",
-        url: "http://localhost:3001/user/login",
+        url: "/user/login",
         data: {
           // id: "1",//文章id数据库自动生成
           account: this.account,

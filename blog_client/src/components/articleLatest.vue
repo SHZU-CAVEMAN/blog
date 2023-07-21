@@ -85,7 +85,7 @@ export default {
   },
   computed: {
     pictureUrl() {
-      return "http://localhost:3001/uploadFiles/" + this.article.picture;
+      return "/uploadFiles/" + this.article.picture;
     }
   },
   props: ["article"],

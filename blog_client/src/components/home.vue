@@ -77,7 +77,7 @@ export default {
     //请求文章数据
     axios({
       method: "get",
-      url: "http://localhost:3001/article/getall",
+      url: "/article/getall",
     })
       .then((res) => {
         for (var i = 0; i < res.data.data.length; i++) {

@@ -40,7 +40,7 @@ export default {
     // 请求评论数据
     axios({
       method: "get",
-      url: "http://localhost:3001/comment/getall",
+      url: "/comment/getall",
     })
       .then((res) => {
         //将请求的数据保存在store中
@@ -57,7 +57,7 @@ export default {
        //请求文章数据
     axios({
       method: "get",
-      url: "http://localhost:3001/article/getall",
+      url: "/article/getall",
     })
       .then((res) => {
 

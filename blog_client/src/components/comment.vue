@@ -178,7 +178,7 @@ export default {
             likeNumber: '',// 某条评论的点赞数量（此功能暂废弃 ————7.13）
             commentListByVueX: this.$store.state.comment.commentdata,//请求来的，相应文章的评论数据
             commentListByProps: [],
-            pictureUrl: 'http://localhost:3001/uploadFiles/',
+            pictureUrl: '/uploadFiles/',
             // theme:'',
             isLike: false,
             isLikeId: '',
@@ -242,7 +242,7 @@ export default {
             else {
                 axios({
                     method: "post",
-                    url: "http://127.0.0.1:3001/comment/add",
+                    url: "/comment/add",
                     data: {
                         // id: "1",//文章id数据库自动生成
                         nickname: this.nickname,

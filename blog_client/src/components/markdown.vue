@@ -121,7 +121,7 @@ export default {
     //文章数据
     console.log(this.name);
     var url = encodeURI(
-      "http://localhost:3001/uploadFiles/" + this.name + ".md"
+      "/uploadFiles/" + this.name + ".md"
     );
     // var urldeco = decodeURI(url);
     console.log(url);
