@@ -9,7 +9,7 @@ const bodyparser = require("body-parser");
 
 const app = express();
 
-const PORT = 3001;
+const PORT = 81;
 //文件存放目录
 const UPLOAD_DIR = path.join(__dirname, "/uploadFiles");
 

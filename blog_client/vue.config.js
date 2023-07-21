@@ -6,16 +6,18 @@
 module.exports = {
   pages: {
     index: {
-      //入口
+      //设置入口文件
       entry: 'src/main.js',
     },
   },
 	lintOnSave:false, //关闭语法检查
+
 	//开启代理服务器（方式一）
   //这种方式只能请求一个服务器，而且不能控制代理服务器是否要转发给远程服务器，本身（public）就有的资源不会再去请求。
-	// devServer: {
-  //   proxy: 'http://localhost:3001'
-  // }, 
+	devServer: {
+    port:80,
+    proxy: 'http://localhost:81'//这里更换成你实际服务器的地址
+  }, 
   
 	// 开启代理服务器（方式二）
 	// devServer: {
