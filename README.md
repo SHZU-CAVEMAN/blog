@@ -23,4 +23,4 @@ npm run build
 ```
 node app.js
 ```
-打包时原先在 vue.config.js 中配置的 proxy 不会被打包进去，需要在服务端配置反向代理，可以使用nginx进行配置。
+**注意：**打包时原先在 vue.config.js 中配置的 proxy 不会被打包进去，需要在服务端配置反向代理，可以使用nginx进行配置。
